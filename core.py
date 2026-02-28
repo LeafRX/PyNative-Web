@@ -9,7 +9,7 @@ class NanoWeb:
     def route(self, path):
         """
         decorator that converts simple paths like '/user/<id>' 
-        in regular expression capture
+        in regular expression capture, simple
         """
         def wrapper(handler):
             # turn syntax <var> to regex groups named (?P<var>[^/]+)
